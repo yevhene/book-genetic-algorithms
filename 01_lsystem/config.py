@@ -26,7 +26,7 @@ cantor_set = {
   }
 }
 
-koch_curve = {
+koch = {
   'axiom': 'F',
   'rules': {
     'F': 'F+F-F-F+F',
@@ -69,7 +69,7 @@ sierpinski_arrowhead = {
   }
 }
 
-dragon_curve = {
+dragon = {
   'axiom': 'X',
   'rules': {
     'X': 'X+YF+',
@@ -112,13 +112,13 @@ quadratic_koch_island = {
   }
 }
 
-peano_curve = {
+peano = {
   'axiom': 'X',
   'rules': {
     'X': 'XFYFX+F+YFXFY-F-XFYFX',
     'Y': 'YFXFY-F-XFYFX+F+YFXFY'
   },
-  'steps': 4,
+  'steps': 3,
   'commands': {
     '+': lambda t: t.right(90),
     '-': lambda t: t.left(90),

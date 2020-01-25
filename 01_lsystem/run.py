@@ -1,3 +1,4 @@
+import sys
 import turtle
 import config
 from lsystem import LSystem
@@ -86,10 +87,10 @@ if __name__ == '__main__':
   turtle.speed(100)
 
   turtle.pencolor('blue')
-  bounds = (0, 0, 150, 150)
+  bounds = (30, -30, 70, 70)
   draw_rect(bounds, turtle)
 
   turtle.pencolor('green')
-  lsystem = LSystem(config.dragon_curve)
+  lsystem = LSystem(getattr(config, sys.argv[1]))
   lsystem.run(TurtleBoundsLoggerExecutor(turtle, bounds))
   turtle.mainloop()

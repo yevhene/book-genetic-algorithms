@@ -1,0 +1,7 @@
+if y >= -150
+  if y < 0
+    if x < 150
+      if y >= 0
+    if y < 10
+      if x < 50
+        
